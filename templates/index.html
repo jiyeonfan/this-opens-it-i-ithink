@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Link Transformer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Webpage Link Transformer</h1>
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <button id="transformButton">Fetch and Transform Links</button>
+        <div id="results">
+            <h2>Transformed Links</h2>
+            <ul id="linksList"></ul>
+        </div>
+        <button id="copyButton">Copy to Clipboard</button>
+        <button id="clearButton">Clear Results</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
