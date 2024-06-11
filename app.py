@@ -69,5 +69,5 @@ if __name__ == '__main__':
             continue
 
     # Open Flask app in a standalone window
-    webview.create_window("Your App Name", url)
-    webview.start(debug=True)
+    webview.create_window("Numerade Video Finder", url)
+    webview.start(debug=False)
